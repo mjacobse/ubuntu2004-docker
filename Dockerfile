@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update && \
  apt install -y rpm2cpio cpio wget gfortran gcc ragel libssl-dev make g++ git autogen \
 	pkg-config valgrind libboost-test-dev language-pack-en-base libboost-python-dev python3-dev \
